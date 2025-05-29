@@ -14,4 +14,13 @@ public class AppTest {
 
         Assertions.assertEquals(3, rs);
     }
+
+    @Test
+    @DisplayName("10 + 20 == 30")
+    void test2() {
+        App app = new App();
+        int rs = app.plus(10, 20);
+
+        Assertions.assertEquals(30, rs);
+    }
 }
